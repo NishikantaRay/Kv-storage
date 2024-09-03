@@ -6,11 +6,17 @@
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
     "start": "wrangler dev",
-    "test": "vitest"
+    "test": "vitest",
+    "format": "prettier --print-width 80 --no-semi --single-quote --trailing-comma es5 --write src/**/*.js"
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.4.5",
-    "wrangler": "^3.60.3",
-    "vitest": "1.5.0"
+    "prettier": "3.3.3",
+    "vitest": "1.5.0",
+    "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "@tsndr/cloudflare-worker-jwt": "^2.5.3",
+    "bcryptjs": "^2.4.3"
   }
 }
